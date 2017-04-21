@@ -1,0 +1,17 @@
+language: bash
+services: docker
+sudo: required
+
+env:
+  - IMAGE=php-dev/5.6/
+  - IMAGE=php-dev/7.0/
+  - IMAGE=php-dev/7.1/
+
+before_script:
+  - cd $IMAGE
+
+script:
+  - docker build .
+
+after_script:
+  - docker images
