@@ -3,9 +3,9 @@ services: docker
 sudo: required
 
 env:
-  - IMAGE=php-dev/5.6/
-  - IMAGE=php-dev/7.0/
-  - IMAGE=php-dev/7.1/
+  - IMAGE=dockerfile/php-dev/5.6/
+  - IMAGE=dockerfile/php-dev/7.0/
+  - IMAGE=dockerfile/php-dev/7.1/
 
 before_script:
   - cd $IMAGE
