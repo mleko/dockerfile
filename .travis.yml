@@ -6,6 +6,7 @@ env:
   - IMAGE=dockerfile/php-dev/5.6/
   - IMAGE=dockerfile/php-dev/7.0/
   - IMAGE=dockerfile/php-dev/7.1/
+  - IMAGE=dockerfile/php-dev/latest/
 
 before_script:
   - cd $IMAGE
