@@ -2,7 +2,7 @@ FROM php:5.6
 
 MAINTAINER Daniel Król <daniel@krol.me>
 
-RUN apt-get update -yqq && apt-get install git libzip-dev zlib1g-dev -yqq
+RUN apt-get update -yqq && apt-get install git libzip-dev zlib1g-dev openssh-client -yqq
 
 RUN docker-php-ext-install zip calendar
 
